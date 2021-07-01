@@ -49,10 +49,21 @@ public class BinarySearchTree {
 		printInOrder(tn.getRightChild());
 	}
 	
+	/**
+	 * Check if (int) value is found in tree
+	 * @param x
+	 * @return
+	 */
 	public boolean contains(int x) {
 		return contains(root,x);
 	}
 	
+	/**
+	 * Check if (int) value is found in tree - implementation
+	 * @param tn
+	 * @param x
+	 * @return
+	 */
 	private boolean contains(BinaryTreeNode tn, int x) {
 		if (tn == null)
 			return false;
